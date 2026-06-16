@@ -20,6 +20,8 @@ app = dash.Dash(
     suppress_callback_exceptions=True
 )
 
+server = app.server
+
 app.layout = html.Div(
     children=[
         create_header(),  # Always visible header
